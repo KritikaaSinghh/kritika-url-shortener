@@ -38,6 +38,7 @@ public class WebSecurityConfig {
                                 "/error",
                                 "/short-urls",
                                 "/s/**",
+                                "/qr/**",
                                 "/webjars/**",
                                 "/css/**",
                                 "/js/**",
