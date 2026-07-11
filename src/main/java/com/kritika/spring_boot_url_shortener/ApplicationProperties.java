@@ -12,7 +12,7 @@ import org.springframework.validation.annotation.Validated;
 public record ApplicationProperties(
 
         @NotBlank
-        @DefaultValue("http://localhost:8080")
+        @DefaultValue("https://kritika-url-shortener-production.up.railway.app")
         String baseUrl,
 
         @DefaultValue("30")
