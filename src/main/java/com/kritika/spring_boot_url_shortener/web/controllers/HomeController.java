@@ -3,13 +3,12 @@ package com.kritika.spring_boot_url_shortener.web.controllers;
 import com.kritika.spring_boot_url_shortener.ApplicationProperties;
 import com.kritika.spring_boot_url_shortener.domain.exceptions.ShortUrlNotFoundException;
 import com.kritika.spring_boot_url_shortener.domain.models.*;
-import com.kritika.spring_boot_url_shortener.domain.services.QrCodeService;
 import com.kritika.spring_boot_url_shortener.domain.services.ShortUrlService;
 import com.kritika.spring_boot_url_shortener.domain.services.UserService;
 import com.kritika.spring_boot_url_shortener.web.dtos.CreateShortUrlForm;
 import com.kritika.spring_boot_url_shortener.web.dtos.RegisterUserRequest;
 import jakarta.validation.Valid;
-import org.springframework.http.MediaType;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -24,20 +23,18 @@ public class HomeController {
 
     private final ShortUrlService shortUrlService;
     private final UserService userService;
-    private final QrCodeService qrCodeService;
+
     private final ApplicationProperties properties;
     private final SecurityUtils securityUtils;
 
     public HomeController(
             ShortUrlService shortUrlService,
             UserService userService,
-            QrCodeService qrCodeService,
             ApplicationProperties properties,
             SecurityUtils securityUtils) {
 
         this.shortUrlService = shortUrlService;
         this.userService = userService;
-        this.qrCodeService = qrCodeService;
         this.properties = properties;
         this.securityUtils = securityUtils;
     }
@@ -324,22 +321,5 @@ public class HomeController {
         return "redirect:/my-urls";
     }
 
-    @GetMapping(
-            value = "/qr/{shortKey}",
-            produces = MediaType.IMAGE_PNG_VALUE
-    )
-    @ResponseBody
-    public byte[] generateQrCode(
-            @PathVariable String shortKey)
-            throws Exception {
 
-        String shortUrl =
-                properties.baseUrl()
-                        + "/s/"
-                        + shortKey;
-
-        return qrCodeService.generateQrCode(
-                shortUrl
-        );
-    }
 }

@@ -147,7 +147,6 @@
                 <th>Created</th>
                 <th>Expires</th>
                 <th>Clicks</th>
-                <th>QR Code</th>
             </tr>
             </thead>
 
@@ -182,12 +181,7 @@
 
                 <td th:text="${url.clickCount}">
                 </td>
-                <td>
-                    <img th:src="@{/qr/{key}(key=${url.shortKey})}"
-                         width="80"
-                         height="80"
-                         alt="QR Code">
-                </td>
+
             </tr>
 
             </tbody>
