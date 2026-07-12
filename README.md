@@ -1,170 +1,104 @@
-# Kritika URL Shortener
+Kritika URL Shortener
 
-A full-stack URL Shortener application built using Spring Boot and PostgreSQL that allows users to create secure, shareable, and trackable short URLs with authentication, analytics, and QR code generation.
+A full-stack URL Shortener application built using Spring Boot and PostgreSQL that allows users to create secure, shareable, and trackable short URLs with authentication and analytics.
 
-## 🚀 Live Demo
+🚀 Live Demo
 
-https://kritika-url-shortener-production.up.railway.app
+Live Demo
 
-## 📂 GitHub Repository
+📂 GitHub Repository
 
-https://github.com/KritikaaSinghh/kritika-url-shortener
+GitHub Repository
 
----
+✨ Features
+URL Shortening
+User Authentication & Authorization
+Public and Private URLs
+URL Expiration Support
+Analytics Dashboard
+Click Tracking
+User-specific URL Management
+Public URL Listing
+Responsive UI with Thymeleaf
+PostgreSQL Database Integration
+Cloud Deployment on Railway
+🛠 Tech Stack
+Backend
+Java 21
+Spring Boot 3
+Spring Security
+Spring Data JPA
+Hibernate
+Database
+PostgreSQL
+Frontend
+Thymeleaf
+HTML5
+CSS3
+Bootstrap
+Deployment & Tools
+Maven
+Docker
+Railway
+Git & GitHub
+📊 Analytics Features
+Total URLs Created
+Total Clicks
+Top 5 Most Clicked URLs
+Public URL Listing
+User Dashboard
+☁️ Production Deployment
+Application deployed on Railway
+PostgreSQL hosted on Railway PostgreSQL
+GitHub integrated Continuous Deployment (CI/CD)
+Production URL
 
-## ✨ Features
+Production URL
 
-- URL Shortening
-- User Authentication & Authorization
-- Public and Private URLs
-- URL Expiration Support
-- Analytics Dashboard
-- Click Tracking
-- QR Code Generation
-- User-specific URL Management
-- Public URL Listing
-- Responsive UI with Thymeleaf
-- PostgreSQL Database Integration
-- Cloud Deployment on Railway
-- Neon PostgreSQL Integration
+▶️ Run Locally
+Clone Repository
 
----
+Repository:
+Clone Repository
 
-## 🛠 Tech Stack
-
-### Backend
-- Java 21
-- Spring Boot 3
-- Spring Security
-- Spring Data JPA
-- Hibernate
-
-### Database
-- PostgreSQL
-- Neon Database
-
-### Frontend
-- Thymeleaf
-- HTML5
-- CSS3
-- Bootstrap
-
-### Deployment & Tools
-- Maven
-- Docker
-- Railway
-- Git & GitHub
-
-### Additional Libraries
-- ZXing QR Generator
-
----
-
-## 📊 Analytics Features
-
-- Total URLs Created
-- Total Clicks
-- Top 5 Most Clicked URLs
-- Public URL Listing
-- User Dashboard
-
----
-
-## 📱 QR Code Feature
-
-Each shortened URL automatically generates a QR Code that can be scanned directly to open the original URL.
-
----
-
-## ☁️ Production Deployment
-
-- Application deployed on Railway
-- PostgreSQL hosted on Neon Database
-- GitHub integrated Continuous Deployment (CI/CD)
-
-### Production URL
-
-https://kritika-url-shortener-production.up.railway.app
-
----
-
-## ▶️ Run Locally
-
-### Clone Repository
-
-```bash
-git clone https://github.com/KritikaaSinghh/kritika-url-shortener.git
-```
-
-### Move to Project Directory
-
-```bash
+Move to Project Directory
 cd kritika-url-shortener
-```
-
-### Configure Database
+Configure Database
 
 Update:
 
-```properties
 src/main/resources/application.properties
-```
 
 Example:
 
-```properties
 spring.datasource.url=jdbc:postgresql://localhost:5432/postgres
 spring.datasource.username=postgres
 spring.datasource.password=postgres
-```
-
-### Start PostgreSQL Using Docker
-
-```bash
+Start PostgreSQL Using Docker
 docker compose up -d
-```
-
-### Run Application
-
-```bash
+Run Application
 ./mvnw spring-boot:run
-```
-
-### Open Browser
-
-```text
+Open Browser
 http://localhost:8080
-```
-
----
-
-## 📸 Screenshots
-
-- Home Page
-- Login Page
-- Registration Page
-- URL Dashboard
-- QR Code Generation
-- Public URL Listing
-- Analytics Dashboard
-
----
-
-## 👩‍💻 Author
-
-### Kritika Singh
+📸 Screenshots
+Home Page
+Login Page
+Registration Page
+My URLs Dashboard
+Public URL Listing
+Analytics Dashboard
+👩‍💻 Author
+Kritika Singh
 
 📧 Email: singhkritika8449@gmail.com
 
 💼 LinkedIn:
-https://www.linkedin.com/in/kritika8070
+LinkedIn Profile
 
 💻 GitHub:
-https://github.com/KritikaaSinghh
+GitHub Profile
 
 🌐 Live Project:
-https://kritika-url-shortener-production.up.railway.app
+Kritika URL Shortener
 
----
-
-## ⭐ If you found this project useful, please give it a star on GitHub.
+⭐ If you found this project useful, please give it a star on GitHub.
