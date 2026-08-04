@@ -2,10 +2,6 @@
 
 A full-stack URL Shortener application built using Spring Boot and PostgreSQL that allows users to create secure, shareable, and trackable short URLs with authentication and analytics.
 
-## 🚀 Live Demo
-
-https://kritika-url-shortener-production.up.railway.app
-
 ## 📂 GitHub Repository
 
 https://github.com/KritikaaSinghh/kritika-url-shortener
@@ -24,7 +20,6 @@ https://github.com/KritikaaSinghh/kritika-url-shortener
 - Public URL Listing
 - Responsive UI with Thymeleaf
 - PostgreSQL Database Integration
-- Cloud Deployment on Railway
 
 ---
 
@@ -49,7 +44,6 @@ https://github.com/KritikaaSinghh/kritika-url-shortener
 ### Deployment & Tools
 - Maven
 - Docker
-- Railway
 - Git & GitHub
 
 ---
@@ -61,18 +55,6 @@ https://github.com/KritikaaSinghh/kritika-url-shortener
 - Top 5 Most Clicked URLs
 - Public URL Listing
 - User Dashboard
-
----
-
-## ☁️ Production Deployment
-
-- Application deployed on Railway
-- PostgreSQL hosted on Railway PostgreSQL
-- GitHub integrated Continuous Deployment (CI/CD)
-
-### Production URL
-
-https://kritika-url-shortener-production.up.railway.app
 
 ---
 
@@ -144,8 +126,6 @@ https://www.linkedin.com/in/kritika8070
 💻 GitHub:  
 https://github.com/KritikaaSinghh
 
-🌐 Live Project:  
-https://kritika-url-shortener-production.up.railway.app
 
 ---
 
