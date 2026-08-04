@@ -1,26 +1,28 @@
 # 🔗 Kritika URL Shortener
 
-A full-stack **URL Shortener** application built using **Spring Boot**, **Spring Security**, and **PostgreSQL** that allows users to create secure, shareable, and trackable short URLs with authentication and analytics.
+A secure full-stack **URL Shortener** application built using **Spring Boot**, **Spring Security**, **PostgreSQL**, **Hibernate**, and **Thymeleaf**. The application allows users to create, manage, and track short URLs with secure authentication, click analytics, URL expiration, and public/private visibility.
 
 ---
 
 # 📂 GitHub Repository
 
-👉 https://github.com/KritikaaSinghh/kritika-url-shortener
+🔗 https://github.com/KritikaaSinghh/kritika-url-shortener
 
 ---
 
 # ✨ Features
 
-- 🔗 URL Shortening
+- 🔗 Create Short URLs
 - 🔐 User Authentication & Authorization
+- 👤 User Registration & Login
 - 🌐 Public and Private URLs
 - ⏳ URL Expiration Support
 - 📊 Analytics Dashboard
 - 👆 Click Tracking
+- 📈 Top 5 Most Clicked URLs
 - 👤 User-specific URL Management
 - 🌍 Public URL Listing
-- 📱 Responsive UI with Thymeleaf
+- 📱 Responsive UI with Thymeleaf & Bootstrap
 - 🗄 PostgreSQL Database Integration
 
 ---
@@ -34,6 +36,7 @@ A full-stack **URL Shortener** application built using **Spring Boot**, **Spring
 - Spring Security
 - Spring Data JPA
 - Hibernate
+- Flyway
 
 ## Database
 
@@ -57,11 +60,23 @@ A full-stack **URL Shortener** application built using **Spring Boot**, **Spring
 
 # 📊 Analytics Features
 
-- Total URLs Created
-- Total Clicks
-- Top 5 Most Clicked URLs
-- Public URL Listing
-- User Dashboard
+- 📌 Total URLs Created
+- 👆 Total Clicks
+- 📈 Top 5 Most Clicked URLs
+- 🌍 Public URL Listing
+- 👤 User Dashboard
+
+---
+
+# 📌 Key Highlights
+
+- Secure authentication using Spring Security
+- Database migration using Flyway
+- URL click tracking and analytics
+- Public & Private URL management
+- PostgreSQL integration with Spring Data JPA
+- Responsive UI built with Thymeleaf & Bootstrap
+- Clean layered architecture following Spring Boot best practices
 
 ---
 
@@ -82,6 +97,7 @@ src
 │   └── resources
 │       ├── templates
 │       ├── static
+│       ├── db
 │       └── application.properties
 └── test
 ```
@@ -90,19 +106,19 @@ src
 
 # ▶️ Run Locally
 
-## Clone Repository
+## 1️⃣ Clone Repository
 
 ```bash
 git clone https://github.com/KritikaaSinghh/kritika-url-shortener.git
 ```
 
-## Move to Project Directory
+## 2️⃣ Move to Project Directory
 
 ```bash
 cd spring-boot-url-shortener
 ```
 
-## Configure Database
+## 3️⃣ Configure PostgreSQL
 
 Update the following file:
 
@@ -113,20 +129,34 @@ src/main/resources/application.properties
 Example:
 
 ```properties
-spring.datasource.url=jdbc:postgresql://localhost:5432/postgres
+spring.datasource.url=jdbc:postgresql://localhost:5432/urlshortener
 spring.datasource.username=postgres
-spring.datasource.password=postgres
+spring.datasource.password=your_password
 ```
 
-## Run Application
+## 4️⃣ Build the Project
+
+```bash
+mvn clean install
+```
+
+## 5️⃣ Run the Application
+
+Windows
+
+```bash
+.\mvnw spring-boot:run
+```
+
+Linux / macOS
 
 ```bash
 ./mvnw spring-boot:run
 ```
 
-## Open Browser
+## 6️⃣ Open in Browser
 
-```text
+```
 http://localhost:8080
 ```
 
@@ -172,20 +202,20 @@ http://localhost:8080
 
 # 🚀 Future Enhancements
 
-- QR Code Generation
-- Custom Short URLs
-- Password Protected URLs
-- Email Verification
-- Redis Cache Integration
-- Rate Limiting
-- URL Performance Analytics
-- REST API Documentation using Swagger
+- 🎯 Custom Short URLs
+- 📱 QR Code Generation
+- 🔒 Password Protected URLs
+- 📧 Email Verification
+- ⚡ Redis Cache Integration
+- 🚦 Rate Limiting
+- 📊 Advanced URL Performance Analytics
+- 📖 REST API Documentation using Swagger/OpenAPI
 
 ---
 
 # 👩‍💻 Author
 
-## Kritika Singh
+**Kritika Singh**
 
 📧 **Email**
 
@@ -204,5 +234,13 @@ https://github.com/KritikaaSinghh
 # ⭐ Support
 
 If you found this project useful, please consider giving it a ⭐ on GitHub.
+
+---
+
+## 🙌 Thank You
+
+Thank you for visiting this repository.
+
+If you like this project, don't forget to ⭐ the repository.
 
 Happy Coding! 🚀
