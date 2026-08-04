@@ -16,4 +16,4 @@
 ![Analytics Dashboard](analytics-dashboard.png)
 
 ### Private URLs
-![Private URLs](screenshots/Private-URIs.png)
+![Private URLs](Private-URIs.png)
